@@ -56,3 +56,116 @@
 2020-12-01 10:23:42.802 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
 2020-12-01 10:23:42.806 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 3 ms
 2020-12-01 10:23:43.059 [http-nio-8080-exec-1] INFO  org.mongodb.driver.connection -Opened connection [connectionId{localValue:3, serverValue:16}] to localhost:27017
+2020-12-01 11:25:50.589 [main] INFO  com.example.demo.DemoApplication -Starting DemoApplication using Java 11.0.8 on Siyas-MacBook-Air.local with PID 15305 (/Users/SiyaYan/Desktop/examples/demo/target/classes started by SiyaYan in /Users/SiyaYan/Desktop/examples/demo)
+2020-12-01 11:25:50.597 [main] DEBUG com.example.demo.DemoApplication -Running with Spring Boot v2.4.0, Spring v5.3.1
+2020-12-01 11:25:50.598 [main] INFO  com.example.demo.DemoApplication -No active profile set, falling back to default profiles: default
+2020-12-01 11:25:52.855 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-01 11:25:52.858 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-12-01 11:25:53.185 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 321 ms. Found 1 MongoDB repository interfaces.
+2020-12-01 11:25:53.237 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-01 11:25:53.241 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-01 11:25:53.267 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.service.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-12-01 11:25:53.268 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2020-12-01 11:25:54.246 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2020-12-01 11:25:54.265 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-01 11:25:54.265 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2020-12-01 11:25:54.266 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-01 11:25:54.401 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-12-01 11:25:54.402 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3535 ms
+2020-12-01 11:25:55.338 [main] INFO  org.mongodb.driver.cluster -Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-12-01 11:25:55.488 [cluster-ClusterId{value='5fc5b7c3dff5171721b9885e', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -Opened connection [connectionId{localValue:2, serverValue:18}] to localhost:27017
+2020-12-01 11:25:55.488 [cluster-rtt-ClusterId{value='5fc5b7c3dff5171721b9885e', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -Opened connection [connectionId{localValue:1, serverValue:19}] to localhost:27017
+2020-12-01 11:25:55.495 [cluster-ClusterId{value='5fc5b7c3dff5171721b9885e', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=41229442}
+2020-12-01 11:25:59.348 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-01 11:25:59.527 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-01 11:25:59.918 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2020-12-01 11:25:59.925 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2020-12-01 11:25:59.926 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-01 11:26:00.063 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Pausing ProtocolHandler ["http-nio-8080"]
+2020-12-01 11:26:00.064 [main] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+2020-12-01 11:26:00.082 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Stopping ProtocolHandler ["http-nio-8080"]
+2020-12-01 11:26:00.083 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Destroying ProtocolHandler ["http-nio-8080"]
+2020-12-01 11:26:00.106 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-12-01 11:26:00.139 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2020-12-01 11:26:25.282 [main] INFO  com.example.demo.DemoApplication -Starting DemoApplication using Java 11.0.8 on Siyas-MacBook-Air.local with PID 15321 (/Users/SiyaYan/Desktop/examples/demo/target/classes started by SiyaYan in /Users/SiyaYan/Desktop/examples/demo)
+2020-12-01 11:26:25.291 [main] DEBUG com.example.demo.DemoApplication -Running with Spring Boot v2.4.0, Spring v5.3.1
+2020-12-01 11:26:25.292 [main] INFO  com.example.demo.DemoApplication -No active profile set, falling back to default profiles: default
+2020-12-01 11:26:26.850 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-01 11:26:26.852 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-12-01 11:26:27.112 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 254 ms. Found 1 MongoDB repository interfaces.
+2020-12-01 11:26:27.140 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-01 11:26:27.142 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-01 11:26:27.164 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.service.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-12-01 11:26:27.165 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2020-12-01 11:26:28.141 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2020-12-01 11:26:28.158 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-01 11:26:28.159 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2020-12-01 11:26:28.159 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-01 11:26:28.270 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-12-01 11:26:28.270 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 2872 ms
+2020-12-01 11:26:29.001 [main] INFO  org.mongodb.driver.cluster -Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-12-01 11:26:29.131 [cluster-ClusterId{value='5fc5b7e4d8b23c03918f5e37', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -Opened connection [connectionId{localValue:1, serverValue:20}] to localhost:27017
+2020-12-01 11:26:29.131 [cluster-rtt-ClusterId{value='5fc5b7e4d8b23c03918f5e37', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -Opened connection [connectionId{localValue:2, serverValue:21}] to localhost:27017
+2020-12-01 11:26:29.133 [cluster-ClusterId{value='5fc5b7e4d8b23c03918f5e37', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=38599565}
+2020-12-01 11:26:30.864 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-01 11:26:31.013 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-01 11:26:31.337 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2020-12-01 11:26:31.388 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-01 11:26:31.393 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+2020-12-01 11:26:31.447 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-12-01 11:26:31.486 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+2020-12-01 11:26:32.385 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-12-01 11:26:32.397 [main] INFO  com.example.demo.DemoApplication -Started DemoApplication in 8.055 seconds (JVM running for 8.706)
+2020-12-01 11:26:46.258 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-01 11:26:46.260 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-12-01 11:26:46.264 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 3 ms
+2020-12-01 11:33:15.314 [main] INFO  com.example.demo.DemoApplication -Starting DemoApplication using Java 11.0.8 on Siyas-MacBook-Air.local with PID 15396 (/Users/SiyaYan/Desktop/examples/demo/target/classes started by SiyaYan in /Users/SiyaYan/Desktop/examples/demo)
+2020-12-01 11:33:15.321 [main] DEBUG com.example.demo.DemoApplication -Running with Spring Boot v2.4.0, Spring v5.3.1
+2020-12-01 11:33:15.322 [main] INFO  com.example.demo.DemoApplication -No active profile set, falling back to default profiles: default
+2020-12-01 11:33:17.060 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-01 11:33:17.062 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-12-01 11:33:17.373 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 306 ms. Found 1 MongoDB repository interfaces.
+2020-12-01 11:33:17.403 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-01 11:33:17.405 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-01 11:33:17.424 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.service.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-12-01 11:33:17.425 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2020-12-01 11:33:18.385 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2020-12-01 11:33:18.405 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-01 11:33:18.406 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2020-12-01 11:33:18.407 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-01 11:33:18.528 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2020-12-01 11:33:18.528 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3103 ms
+2020-12-01 11:33:19.254 [main] INFO  org.mongodb.driver.cluster -Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-12-01 11:33:19.371 [cluster-rtt-ClusterId{value='5fc5b97f7907fd399ccba625', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -Opened connection [connectionId{localValue:2, serverValue:22}] to localhost:27017
+2020-12-01 11:33:19.371 [cluster-ClusterId{value='5fc5b97f7907fd399ccba625', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -Opened connection [connectionId{localValue:1, serverValue:23}] to localhost:27017
+2020-12-01 11:33:19.373 [cluster-ClusterId{value='5fc5b97f7907fd399ccba625', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=37617861}
+2020-12-01 11:33:20.983 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-01 11:33:21.130 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-01 11:33:21.420 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+2020-12-01 11:33:21.441 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-01 11:33:21.443 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+2020-12-01 11:33:21.466 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2020-12-01 11:33:21.502 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+2020-12-01 11:33:22.330 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-12-01 11:33:22.345 [main] INFO  com.example.demo.DemoApplication -Started DemoApplication in 7.941 seconds (JVM running for 8.631)
+2020-12-01 11:33:32.457 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-01 11:33:32.460 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2020-12-01 11:33:32.465 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 5 ms
+2020-12-01 11:33:32.626 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-12-01 11:33:45.319 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-12-01 11:35:07.071 [http-nio-8080-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
