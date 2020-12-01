@@ -10,10 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-
+/**
+ * @Params: jdbcTemplate connect multiply database
+ * @Author: Siya(Xiran) Yan
+ * @Date: 11:07 1/12/20
+ */
 @RestController
 @RequestMapping("/jdbc")
-public class jdbcController {
+public class JdbcController {
     //by type
     @Autowired
     private JdbcTemplate oneTemplate;
@@ -21,11 +25,13 @@ public class jdbcController {
     @Autowired
     @Qualifier("twoTemplate")
     private JdbcTemplate twoTemplate;
+
     @RequestMapping("/getOne")
-    public List<user> getOneUsers(){
+    public List<user> getOneUsers() {
         List<user> list = oneTemplate.query("select id,name,detail from config", new BeanPropertyRowMapper<>(user.class));
         return list;
     }
+
     @RequestMapping("/getTwo")
     public List<user> getTwoUsers() {
         List<user> list = twoTemplate.query("select id,name,detail from config", new BeanPropertyRowMapper<>(user.class));

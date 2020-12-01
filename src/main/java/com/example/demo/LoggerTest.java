@@ -1,12 +1,14 @@
 package com.example.demo;
 
 import org.junit.Test;
-        import org.slf4j.Logger;
-        import org.slf4j.LoggerFactory;
-        import org.springframework.boot.test.context.SpringBootTest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.test.context.SpringBootTest;
+
 @SpringBootTest
 public class LoggerTest {
     private static final Logger logger = LoggerFactory.getLogger(LoggerTest.class);
+
     @Test
     public void test() {
         logger.trace("trace 级别的日志");

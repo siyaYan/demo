@@ -9,8 +9,13 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * @Params: mybatis deploy mapper to get bean
+ * @Author: Siya(Xiran) Yan
+ * @Date: 11:07 1/12/20
+ */
 @Service
-public class userService {
+public class UserService {
     @Autowired
     private mapperOne one1;
     @Autowired
@@ -19,11 +24,11 @@ public class userService {
     private RedisTemplate redisTemplate;
 
     public List<user> getUsers() {
-        List<user> ones=one1.selectAll();
-        List<user> twos=two2.selectAll();
+        List<user> ones = one1.selectAll();
+        List<user> twos = two2.selectAll();
         ones.addAll(twos);
-        redisTemplate.opsForValue().set("users",ones);
-        List<user> list= (List<user>) redisTemplate.opsForValue().get("users");
+        redisTemplate.opsForValue().set("users", ones);
+        List<user> list = (List<user>) redisTemplate.opsForValue().get("users");
         return list;
 //        return ones;
     }
