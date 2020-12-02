@@ -33,7 +33,7 @@ public class SwaggerController {
             @ApiResponse(code=404,message = "can't find the doc!"),
             @ApiResponse(code=500,message = "Server has error!")
     })
-    @PostMapping("getId/{name}")
+    @PostMapping("getId/{id}")
     public  String getId(@PathVariable(value = "id") String id) {
         return "getId"+id+"????";
     }
