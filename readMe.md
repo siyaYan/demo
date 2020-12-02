@@ -56,3 +56,5 @@
 - 每次重启都要source ~/.bash_profile
 1. mac15以上默认 shell:zsh not bash
 2. 修改~/.zshrc，追加source ~/.bash_profile， 再source ~/.zshrc就可以一直生效了
+
+???
